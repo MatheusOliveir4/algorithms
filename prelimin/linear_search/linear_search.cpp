@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// O(n)
 int linear_search(int* A, int size, int k) {
     int i;
 
@@ -29,5 +30,4 @@ int main() {
     res = linear_search(A, size, k);
 
     cout << res << endl;
-
 }

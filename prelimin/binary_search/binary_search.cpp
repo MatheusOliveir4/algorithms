@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// O(lg n) -> We are considering that the array it's already sorted
+// O(lg n) -> We are considering that the array it's already sort
 int binary_search(int* A, int size, int k) {
     int low, high, mid;
 

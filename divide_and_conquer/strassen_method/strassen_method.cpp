@@ -44,7 +44,7 @@ vector<vector<int>> matrix_sub(
     return C;
 }
 
-// O(n^lg7) 
+// O(n^lg7), n = 2^k -> power of 2 
 vector<vector<int>> strassen_method(
     const vector<vector<int>>& A,
     const vector<vector<int>>& B,

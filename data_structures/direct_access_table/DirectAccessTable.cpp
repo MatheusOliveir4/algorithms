@@ -49,6 +49,19 @@ void DirectAccessTable::print() {
     }
 }
 
+int DirectAccessTable::maxElement() {
+    int max = table[0];
+    
+    for (int i = 0; i < size; i++)
+    {
+        if (table[i] > max) {
+            max = table[i];
+        }
+    }
+    
+    return max;
+}
+
 int main() {
     int n = 5;
     
@@ -58,7 +71,9 @@ int main() {
     DirectAccessTable T(n);
 
     T.insert(k, x);
+
     T.print();    
+    cout << T.maxElement() << endl;
 
     return 0;
 }
